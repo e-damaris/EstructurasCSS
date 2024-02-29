@@ -8,7 +8,7 @@
     <style>
         /*Estilo CSS para tu página */
         body{
-            background:#ff0000;
+            background:#3f3f3f;
             margin: 0;
             padding: 0;
             color: azure;
@@ -17,32 +17,56 @@
             box-sizing: border-box;
         }
         nav{
-            background:#e100ff;
-            padding: 1em;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20%;
-            height: 600px;
-        }
-        header, section, footer{
-            height: 200px;
+            background:#e18700;
         }
         header{
-            background: #ffff00;
-            padding: 1em;
+            background: #ffe600;
         }
-        section{
-            background: #00ff00;
-            padding: 1em;
+        .seccion{
+            background: #006100;
         }
         footer{
-            background: #00d5ff;
+            background: #b0005b;
+        }
+        a{
+            color: azure;
+        }
+        li{
+            text-align: left;
+        }
+        header, .seccion, footer, nav{
             padding: 1em;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
+        }
+        @media screen and (min-width: 600px){
+            /*Aqui inician los estilos de tablet*/
+            nav{
+                float: left;
+                width: 20%;
+                height: 600px;
+            }
+            header, .seccion, footer{
+                height: 200px;
+            }
+            footer{
+                clear: left;
+            }
+            /*Aqui terminan los estilos de tablet*/
+        }
+        @media screen and (min-width: 1024px){
+            /*Aqui inician los estilos de desktop*/
+           nav{
+                background:rgb(0, 2, 130);
+             }
+            header{
+                background:rgb(65, 0, 126);
+            }
+            .seccion{
+                background:rgb(0, 90, 125);
+            }
+            footer{
+                background:rgb(0, 128, 64);
+            }
+            /*Aqui terminan los estilos de desktop*/
         }
     </style>
 </head>
@@ -65,16 +89,19 @@
         </nav>
 
         <section>
-            <!-- Contenido de la primera sección -->
-            <h2>Sección 1</h2>
-            <p>Texto o contenido de la primera sección.</p>
-        </section>
+            <section class="seccion">
+                <!-- Contenido de la primera sección -->
+                <h2>Sección 1</h2>
+                <p>Texto o contenido de la primera sección.</p>
+             </section>
 
-        <section>
-            <!-- Contenido de la segunda sección -->
-            <h2>Sección 2</h2>
-            <p>Texto o contenido de la segunda sección.</p>
+            <section class="seccion">
+                <!-- Contenido de la segunda sección -->
+                <h2>Sección 2</h2>
+                <p>Texto o contenido de la segunda sección.</p>
+            </section>
         </section>
+ 
     </main>
 
     <footer>
