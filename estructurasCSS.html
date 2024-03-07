@@ -8,7 +8,7 @@
     <style>
         /*Estilo CSS para tu página */
         body{
-            background:#3f3f3f;
+            background:azure;
             margin: 0;
             padding: 0;
             color: azure;
@@ -17,16 +17,16 @@
             box-sizing: border-box;
         }
         nav{
-            background:#e18700;
+            background:#150875;
         }
         header{
-            background: #ffe600;
+            background: #0b3189;
         }
         .seccion{
-            background: #006100;
+            background: #1148a8;
         }
         footer{
-            background: #b0005b;
+            background: #1a77ce;
         }
         a{
             color: azure;
@@ -39,16 +39,14 @@
         }
         @media screen and (min-width: 600px){
             /*Aqui inician los estilos de tablet*/
+            main{
+                display: flex;
+            }
             nav{
-                display: inline-block;
                 width: 20%;
-                height: 600px;
-                vertical-align: top;
             }
             main > section{
-                display: inline-block;
-                width: 74%;
-                vertical-align: top;
+                flex: 1;
             }
             header, .seccion, footer{
                 height: 200px;
@@ -58,19 +56,16 @@
         @media screen and (min-width: 1024px){
             /*Aqui inician los estilos de desktop*/
            nav{
-                background:rgb(0, 2, 130);
+                background:rgb(130, 0, 61);
              }
             header{
-                background:rgb(65, 0, 126);
+                background:rgb(174, 16, 106);
             }
             .seccion{
-                background:rgb(0, 90, 125);
+                background:rgb(228, 51, 181);
             }
             footer{
-                background:rgb(0, 128, 64);
-            }
-            main > section{
-                width: 76.4%;
+                background:rgb(226, 141, 180);
             }
             /*Aqui terminan los estilos de desktop*/
         }
