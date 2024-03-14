@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estructuras CSS</title>
     <!-- Aquí puedes incluir enlaces a tus archivos de estilo (CSS) o scripts (JS) -->
+    <link rel="stylesheet" href="flexboxgrid.min.css">
     <style>
         /*Estilo CSS para tu página */
         body{
@@ -17,16 +18,16 @@
             box-sizing: border-box;
         }
         nav{
-            background:#150875;
+            background:#056022;
         }
         header{
-            background: #0b3189;
+            background: #0b8935;
         }
         .seccion{
-            background: #1148a8;
+            background: #11a837;
         }
         footer{
-            background: #1a77ce;
+            background: #1ace53;
         }
         a{
             color: azure;
@@ -39,15 +40,7 @@
         }
         @media screen and (min-width: 600px){
             /*Aqui inician los estilos de tablet*/
-            main{
-                display: flex;
-            }
-            nav{
-                width: 20%;
-            }
-            main > section{
-                flex: 1;
-            }
+
             header, .seccion, footer{
                 height: 200px;
             }
@@ -72,31 +65,31 @@
     </style>
 </head>
 <body>
+    <div class="row">
+        <header class="col-xs-12">
+            <!-- Puedes colocar el logotipo o el título de tu sitio aquí -->
+            <h1 class="box">Nombre de tu Sitio</h1>
+        </header>
+    </div>
 
-    <header>
-        <!-- Puedes colocar el logotipo o el título de tu sitio aquí -->
-        <h1>Nombre de tu Sitio</h1>
-    </header>
-
-    <main>
-        <nav>
+    <main class="row">
+        <nav class="col-xs-12 col-sm-3 col-lg-2">
             <!-- Aquí puedes agregar enlaces de navegación -->
-            <ul>
+            <ul class="box">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Sección 1</a></li>
                 <li><a href="#">Sección 2</a></li>
                 <!-- Agrega más enlaces según sea necesario -->
             </ul>
         </nav>
-
-        <section>
-            <section class="seccion">
+        <section class="col-xs-12 col-sm-9 col-lg-10">
+            <section class="seccion box">
                 <!-- Contenido de la primera sección -->
                 <h2>Sección 1</h2>
                 <p>Texto o contenido de la primera sección.</p>
              </section>
 
-            <section class="seccion">
+            <section class="seccion box">
                 <!-- Contenido de la segunda sección -->
                 <h2>Sección 2</h2>
                 <p>Texto o contenido de la segunda sección.</p>
@@ -105,10 +98,11 @@
  
     </main>
 
-    <footer>
-        <!-- Pie de página -->
-        <p>Derechos de autor © 2024 Tu Nombre</p>
-    </footer>
-
+    <div class="row">
+        <footer class="col-xs-12">
+            <!-- Pie de página -->
+            <p class="box">Derechos de autor © 2024 Tu Nombre</p>
+        </footer>
+    </div>
 </body>
 </html>
