@@ -40,16 +40,19 @@
         @media screen and (min-width: 600px){
             /*Aqui inician los estilos de tablet*/
             main{
-                display: flex;
+                display: grid;
+                grid-template-columns: 20% 80%;
+                grid-template-rows: 200px 200px;
             }
             nav{
-                width: 20%;
-            }
-            main > section{
-                flex: 1;
+                grid-row-start: 1;
+                grid-row-end: 3;
             }
             header, .seccion, footer{
                 height: 200px;
+            }
+            .seccion{
+               height: 168px; 
             }
             /*Aqui terminan los estilos de tablet*/
         }
